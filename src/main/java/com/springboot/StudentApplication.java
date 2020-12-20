@@ -9,4 +9,8 @@ public class StudentApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(StudentApplication.class, args);
 	}
+
+	public double retrieveResult(){
+		return 3.1416;
+	}
 }
