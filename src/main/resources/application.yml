@@ -9,4 +9,4 @@ spring:
 
 configuration:
   property:
-    value: Hello from Property file
+    value: Hello from Property file, modified at 16:09 21/04/2021, v1.1
