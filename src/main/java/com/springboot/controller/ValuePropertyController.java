@@ -29,7 +29,12 @@ public class ValuePropertyController {
     log.info(getComplexBusinessLogicToBeAdded());
     log.info(getComplexBusinessLogic2ToBeAdded());
     log.info(getComplexBusinessLogic3ToBeAdded());
-    return message;
+    
+    // TODO Added from NgDP project
+    log.info(getComplexBusinessLogic4ToBeAdded());
+    
+        return message;
+    
   }
 
   private String getComplexBusinessLogicToBeAdded() {
@@ -43,4 +48,10 @@ public class ValuePropertyController {
   private String getComplexBusinessLogic3ToBeAdded() {
     return "Added getComplexBusinessLogic3ToBeAdded logic here!";
   }
+  
+    private String getComplexBusinessLogic4ToBeAdded() {
+    return "Added getComplexBusinessLogic4ToBeAdded logic here!";
+  }
 }
+
+
