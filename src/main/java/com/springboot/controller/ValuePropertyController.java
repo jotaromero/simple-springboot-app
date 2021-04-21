@@ -27,10 +27,15 @@ public class ValuePropertyController {
     log.info("getPropertyFromConfiguration method called: {}", message);
 
     log.info(getComplexBusinessLogicToBeAdded());
+    log.info(getComplexBusinessLogic2ToBeAdded());
     return message;
   }
 
   private String getComplexBusinessLogicToBeAdded() {
     return "Added from project a!";
+  }
+  
+  private String getComplexBusinessLogic2ToBeAdded() {
+    return "Added getComplexBusinessLogic2ToBeAdded logic here!";
   }
 }
