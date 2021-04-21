@@ -25,6 +25,12 @@ public class ValuePropertyController {
     String currentDateTime = LocalDateTime.now().format(DATE_TIME_FORMATTER);
     String message = String.format(MSG_TO_FORMAT, currentDateTime, springProperty);
     log.info("getPropertyFromConfiguration method called: {}", message);
+
+    log.info(getComplexBusinessLogicToBeAdded());
     return message;
+  }
+
+  private String getComplexBusinessLogicToBeAdded() {
+    return "Added from project a!";
   }
 }
