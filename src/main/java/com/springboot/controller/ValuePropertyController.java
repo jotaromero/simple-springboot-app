@@ -28,6 +28,7 @@ public class ValuePropertyController {
 
     log.info(getComplexBusinessLogicToBeAdded());
     log.info(getComplexBusinessLogic2ToBeAdded());
+    log.info(getComplexBusinessLogic3ToBeAdded());
     return message;
   }
 
@@ -37,5 +38,9 @@ public class ValuePropertyController {
   
   private String getComplexBusinessLogic2ToBeAdded() {
     return "Added getComplexBusinessLogic2ToBeAdded logic here!";
+  }
+  
+  private String getComplexBusinessLogic3ToBeAdded() {
+    return "Added getComplexBusinessLogic3ToBeAdded logic here!";
   }
 }
