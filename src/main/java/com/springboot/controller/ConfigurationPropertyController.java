@@ -23,7 +23,7 @@ public class ConfigurationPropertyController {
 		return complexProperty.getProperty();
 	}
 	
-	private String method1fromMitDk(){
-		return "Logic from method 1, Mit.dk";
+	private String method2fromNgDP(){
+		return "Logic from method 2, NgDP";
 	}
 }
