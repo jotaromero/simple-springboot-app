@@ -19,6 +19,11 @@ public class ConfigurationPropertyController {
 
 	@GetMapping
 	public List<Property> fetchConfigurationProperties() {
+		log.info(method1fromMitDk());
 		return complexProperty.getProperty();
+	}
+	
+	private String method1fromMitDk(){
+		return "Logic from method 1, Mit.dk";
 	}
 }
