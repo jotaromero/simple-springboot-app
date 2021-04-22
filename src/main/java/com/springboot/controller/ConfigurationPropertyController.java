@@ -19,11 +19,13 @@ public class ConfigurationPropertyController {
 
 	@GetMapping
 	public List<Property> fetchConfigurationProperties() {
-		log.info(method1fromMitDk());
+		// jotaromero: correct logic here
+		log.info(methodComplex1fromNgDP());
+		
 		return complexProperty.getProperty();
 	}
 	
-	private String method2fromNgDP(){
-		return "Logic from method 2, NgDP";
-	}
+	private String methodComplex1fromNgDP(){
+		return "Logic from method NgDP";
+	}	
 }
