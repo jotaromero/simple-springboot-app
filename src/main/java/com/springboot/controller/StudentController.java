@@ -20,6 +20,16 @@ public class StudentController {
 		if (StringUtils.isBlank(student.getLastName())) {
 			throw new InvalidFieldException("Last Name is a required field");
 		}
+
+		// Added method 1 from NgDP 
+		log.info(method1fromNgDP());		
+
 		return String.format("Authorization %s is valid, and Data is saved", authorization);
 	}
+	
+		private String method1fromNgDP(){
+		return "Logic from method 1, NgDP";
+	}
 }
+
+
