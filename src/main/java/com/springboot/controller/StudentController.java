@@ -15,21 +15,33 @@ import com.springboot.model.Student;
 public class StudentController {
 
 	@PostMapping
-	public String saveStudentInformation(@RequestHeader("student-auth-key") String authorization,
-			@RequestBody Student student) {
+	public String saveStudentInformation(@RequestHeader("student-auth-key") String authorization, @RequestBody Student student) {
 		if (StringUtils.isBlank(student.getLastName())) {
-			throw new InvalidFieldException("Last Name is a required field");
+			throw new InvalidFieldException("Last Name is a required field and you should know");
 		}
 
-		// Added method 1 from NgDP 
+		// jotaromero: added method 1 from NgDP 
 		log.info(method1fromNgDP());		
+		
+		// jotaromero: added method 2 from NgDP (new super important logic!)
+		log.info(method2fromNgDP());	
 
 		return String.format("Authorization %s is valid, and Data is saved", authorization);
 	}
 	
-		private String method1fromNgDP(){
-		return "Logic from method 1, NgDP";
+	private String method1fromNgDP(){
+		return "Logic from method NgDP";
+	}
+	
+	private String method2fromNgDP(){
+		return "Logic from method NgDP";
 	}
 }
+
+
+
+
+
+
 
 
